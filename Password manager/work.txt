@@ -1,0 +1,22 @@
+JoJo - Decrypt File
+Nico - View
+Glennix,Nic - add password
+William - Delete, Exit
+Josh - Register, login
+
+
+array list of users.
+
+
+
+class user{
+	email,password , username
+}
+
+
+
+Email: .... 
+Password: ....
+Username: ....
+
+
