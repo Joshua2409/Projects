@@ -1,0 +1,265 @@
+ /* NAV TOP  */
+ * {
+    margin: 0px;
+    overflow-x: hidden;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    color: #fff;
+    background: #415843bb;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #729976bb;
+    color: white;
+}
+
+.navbar .title{
+    color: rgb(59, 97, 59);
+    font-weight: 1000;
+}
+
+
+.title {
+    font-size: 2rem;
+    margin: .5rem;
+    font-style: bold;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+    font-weight: 700;
+}
+
+.navbar-links li:hover {
+    background-color: #37a15b;
+    transition: 0.5s ease-in;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+@media(max-width: 768px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .7rem 3rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+ /* NAV TOP - END */
+
+ /* VIDEO TOP */
+
+#topVideo {
+    width: 100%;
+
+    height: 50%;
+    align-items: center;
+    padding: 25px;
+    margin-bottom: -10px;
+}
+
+.content {
+    width: 70%;
+    padding: 10px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    margin-top: -170px;
+    height: 145px;
+    margin-left: 15%;
+}
+
+#topButton {
+    width: 200px;
+    font-size: 18px;
+    padding-bottom: 50px;
+    padding: 8px;
+    border: none;
+    background: rgb(49, 90, 54);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 7px;
+    transition: all 0.4s ease;
+  }
+  
+#topButton:hover{
+    background: rgb(72, 112, 82);
+    color: rgb(255, 255, 255);
+}
+  
+/* VIDEO TOP - END OF CSS */
+
+/* MOST POPULAR START */
+
+.img{
+    font-size: 35px;
+    padding-top: 25px;
+}
+
+.img h2{
+    margin-left: 50px;
+}
+
+.img-1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.img .img-1 img{
+    margin-top: 25px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.img .row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column{
+    width: 50%;
+    padding: 15px;
+    text-align: center;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.img .img-2 { 
+    display: flex;
+    justify-content: space-around;
+}
+
+.img .img-2 img{
+    margin-top: 25px;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.column-1{
+    float: left;
+    width: 50%;
+    padding: 15px;
+    padding-left: 300px;
+}
+
+.row-1::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.img .btn {
+    display: flex;
+    justify-content: center;
+}
+
+.img button{
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    height: 60px;
+    font-size: 30px;
+    background: rgb(49, 90, 54);
+    border: 1px solid #0e0e0e;
+    border: none;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.img button:hover{
+    background: rgb(72, 112, 82);
+    transition: 0.4s ease;
+}
+
+footer {
+    font-family: sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    background-color: #729976bb;
+    margin-top: auto;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* MOST POPULAR END */
+@media (max-width: 584) {
+    .vid-1{
+        width: 80%;
+        height: 80%;
+    }
+}
+
