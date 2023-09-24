@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="reservation.css">
+    <script src="reservation.js" defer></script>
+    <title>About Us</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a class ="logo" href="main.html">
+            <img src="ASSETS/vhotel-removebg-preview.png">
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="reservation.html">Reserve Now</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="room.html">Our Room</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <section class="container-1">
+        <form action="home.html" method="post" class="formss" id="signin-form" name="signinForm" onsubmit="validateForm()">
+        <h2>Registration</h2>
+        <div class="namerow">
+            <input  type="text"  placeholder="Full name" class="form-control" name="Full Name" value="" required value/>
+            <div class="error" id="nameErr"></div>
+        </div>
+
+        <div class="emailrow">
+            <!-- <label>Email Address</label> -->
+            <input type="email"  placeholder="Email" class="form-control" name="email"  value="" required value />
+            <div class="error" id="emailErr"></div>
+            
+        </div>
+        <div class="password">
+            <!-- <label>Email Address</label> -->
+            <input type="password"  placeholder="Password" class="form-control" name="password"  value="" required value />
+            <div class="error" id="passwordErr"></div>
+            
+        </div>
+
+        <div class="genderrow">
+            <h4><b>Gender</b></h4>
+            <div class =radiogender>
+            <input type="radio" name="gender" id="" />Male
+            <input type="radio" name="gender" id="" />Female
+            </div>
+        </div>
+
+        <div class="daterow">
+            <h4>Check In</h4>
+            <input type="date" name="date" id="date" />
+        </div>
+
+        <div class="outdate">
+            <h4>Check Out</h4>
+            <input type="date" name="dateout" id="dateout" />
+        </div>
+
+        <div class="roomrow">
+            <label for="rooms"></label>
+            <h4>Room Type</h4>
+             <select name="rooms" id="rooms">
+                <option value="Royal">Royal Suite</option>
+                <option value="Deluxe">Deluxe Suite</option>
+                <option value="Family" disabled>Family Suite</option>
+             </select>
+        </div>
+    
+        <div class="tcrow">
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for ="checkbox">I agree to these <a href="main.html">Terms and conditions</a></label><br><br><br>
+            <input type="submit" value="Book Now" />
+        </div>
+        </form>
+    </section>
+
+</body>
+
+<footer>
+    <div class="foot">
+        <div class="col1">
+            <h1>Visit Our Social Media</h1>
+            <div class="igsection">
+                <a href="https://www.instagram.com/">
+                <img src="/ASSETS/ig-removebg-preview.png">
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div class="footertext">
+        <h1>©2023 Vhotel . All right reserved.</h1>
+    </div>
+</footer>
+
+</html>
