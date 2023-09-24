@@ -1,0 +1,221 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+/* NAV BAR */
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+::selection {
+    color: #ffffff;
+    background: #415843bb;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    text-align: left;
+    background-color: rgba(11, 82, 18, 0.733);
+    color: rgb(255, 255, 255);
+}
+
+.navbar .title {
+    color: rgb(59, 97, 59);
+    font-weight: 500;
+}
+
+.navbar .title:hover{
+    opacity: 0.7;
+
+}
+
+/* .title {
+    font-size: 2rem;
+    margin: .5rem;
+    font-style: bold;
+    padding-right: 10px;
+    text-decoration: none;
+} */
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+}
+
+.navbar-links li {
+    list-style: none;
+    float: left;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+    display: block;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+
+.navbar-links li:hover {
+    transition: ease-in;
+    cursor: pointer;
+    padding: 0;
+    background-color: #20380D;
+}
+
+.navbar-links li a.active {
+    background-color: #20380D;
+    padding: 0;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.navbar .logo img{
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* margin: 10px 10px 10px 10px; */
+}
+
+.navbar-right{
+    position: absolute;
+    top:0px;
+    right:0px;
+}
+.navbar-right .profile img{
+    width: 60px;
+    margin-top: 10px;
+    margin-right: 25px;
+}
+
+.container-1 {
+    text-align: center;
+    position: relative;
+    
+}
+
+.container-1 .imgbox img{
+    width: 100%;
+    text-align: center;
+}
+
+.container-1 .welcomebox {
+    position: absolute;
+    height: 40%;
+    left: 35%;
+    top: 35%;
+    color: #ffffff;
+    
+    
+}
+
+
+.container-2{
+    background-color: rgb(97, 190, 112);
+}
+
+.container-2 .how{
+    text-align: center;
+    position: relative;
+    
+
+}
+
+.container-2 .imgbox{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+    
+}
+
+.addressform{
+    
+}
+
+*{box-sizing: border-box;}
+
+input[type], input
+
+
+
+
+footer {
+    display: block;
+    background-color: #20380D;
+    position: bottom;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    width: 100%;
+  }
+
+.footertext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+/* Instead of using px measurements, use % when setting width or height.*/
+/* The % is calculted from the width of the parent element.*/
+#NonResponsiveWidth {
+	width: 1080px;
+    height: auto;
+}
+#responsiveWidth {
+	width: 85%;
+    height: auto;
+}
+/*For text, use vw (viewport-width) instead of px when setting font-width*/
+#NonResponsiveText { font-size: 20px; }
+#responsiveWidth { font-size: 10vw; }
+
+.paybutton{
+    width:100px;
+    height: 50px;
+    border-radius: 25px;
+    border-width: 1px;
+    border-style: solid;
+
+}
+
+.paybutton:hover{
+    background: green;
+    opacity:0.5;
+    cursor: pointer;
+}
