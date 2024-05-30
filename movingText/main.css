@@ -1,0 +1,120 @@
+
+
+html body{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+    margin: 0;
+    padding-top: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    margin:0;
+}
+
+.float-left{
+    float: left;
+    
+}
+
+.navbarlink:hover{
+    color: brown;
+    cursor: pointer;
+}
+
+.float-right{
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 90px;
+}
+
+
+header{
+    background: #F2EDE9;
+    margin: 0;
+    font-family: poppins;
+    font-size: 18px;
+    height: 80px;
+}
+
+header li{
+    padding-left: 100px;
+    margin: 0;
+}
+
+header::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/** first section**/
+
+.container-1{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.sub1{
+    position: relative;
+    width: 33.33%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.sub2  {
+    position: relative;
+    width: 33.33%;
+    height: 100%;
+    overflow: hidden;
+    background-position: center;
+    background-image: url(asset/file.png)
+}
+
+
+.sub3{
+    position: relative;
+    width: 33.33%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.text{
+    position: absolute;
+    font-size: 10em;
+    z-index: -1;
+    white-space: nowrap;
+    line-height: 50vh;
+    animation: movingText 10s linear infinite;
+}
+
+
+
+@keyframes movingText{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.sub1 p{
+    left:100%
+}
+
+.sub3 p{
+    left: -100%;
+}
